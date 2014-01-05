@@ -9,15 +9,15 @@ def fibo(n)
   n <= 1 ? n : fibo(n-1) + fibo(n-2)
 end
 
-def sum(max)
+def sum_of_evens(max)
   arr = []
   num = 0
   value = 0
   while value < max
-    arr << fibo(num)
+    arr << fibo(num) if fibo(num) % 2 == 0
     value = fibo(num)
     num += 1
   end
-  arr
+  arr.inject {|sum,n| sum + n}
 end
 
