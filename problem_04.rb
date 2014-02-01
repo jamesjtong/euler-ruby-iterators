@@ -26,6 +26,5 @@ class FindLargestPalindrome
   end
 end
 
-require 'pry'
+
 a = FindLargestPalindrome.new.find_largest_pal
-binding.pry
