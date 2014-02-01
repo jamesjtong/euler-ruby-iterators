@@ -21,7 +21,7 @@ class HighPrime
 
       self.starting_num+=1
     end
-    return self.starting_num
+    return self.starting_num-1
   end
 end
 

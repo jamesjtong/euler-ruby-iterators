@@ -1,3 +1,8 @@
+// The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+
+// Find the sum of all the primes below two million.
+
+
 # def check_p(num)
 #   primes_hash = {}
 #   (2..(Math.sqrt(num))).each do |n|
@@ -31,6 +36,8 @@ end
 def seive
 
 end
+
+(2...2000000).to_a.map {|num| true}
 
 summation_of_primes(200)
 
